@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.title {
+  text-align: center;
+  padding: 10px 0 30px 0;
+  /* color: rgb(205, 199, 199); */
+  color: black;
+}
+
+.container {
+    /* height: auto; */
+  width: 100%;
+  background-color: rgb(202, 209, 211);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  height: 290px;
+  width: 200px;
+  background-color: white;
+  border-radius: 15px;
+  margin: 30px 50px 30px 50px;
+  box-shadow: 5px 5px 20px rgb(72, 69, 69);
+  transition: all .3s;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  color: black;
+  box-shadow: 4px 4px 30px rgb(242, 234, 234);
+}
+
+button:hover {
+  background-color: rgb(114, 109, 109);
+}
+
+.card img {
+  height: 200px;
+  width: 200px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.cardInfo {
+  text-align: center;
+}
+
+.cardInfo p {
+  color: rgb(163, 175, 177);
+}
+
+.cardInfo button {
+  margin-top: 4px;
+  padding: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.cardInfo h2
+{
+    font-weight: 900;
+    font-size: 25px;
+}
+
+@media(max-width:720px)
+{
+    .container
+    {
+        height: auto;
+        justify-content: space-evenly;
+        /* flex-direction: column; */
+    }
+    .card
+    {
+        transform: scale(1.1);
+    }
+}
